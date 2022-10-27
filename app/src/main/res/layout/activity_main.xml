@@ -29,64 +29,58 @@
         android:layout_marginTop="32dp"
         android:background="@color/white"
         android:text="Username"
-        app:layout_constraintEnd_toEndOf="@id/rightguide"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@id/leftguide"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tree"/>
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/tree" />
 
     <TextView
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:background="@color/white"
         android:layout_marginTop="8dp"
+        android:background="@color/white"
         android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintStart_toStartOf="@id/leftguide"
-        app:layout_constraintEnd_toEndOf="@id/rightguide"
-         />
-        <Button
-            android:id="@+id/ok"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ok"
-            app:layout_constraintTop_toBottomOf="@id/password"
-            app:layout_constraintStart_toStartOf="@id/leftguide"
-            >
-
-        </Button>
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/username" />
 
     <Button
+        android:id="@+id/login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:id="@+id/cancel"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintStart_toEndOf="@id/ok"
-        app:layout_constraintEnd_toEndOf="@id/rightguide"
-        app:layout_constraintTop_toTopOf="@id/ok">
-
+        android:layout_margin="8dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/password">
 
     </Button>
 
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintTop_toTopOf="@id/login">
+    </Button>
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftguide"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.20">
-
-    </androidx.constraintlayout.widget.Guideline>
+        app:layout_constraintGuide_percent="0.2"
+        />
 
     <androidx.constraintlayout.widget.Guideline
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rightguide"
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80">
+        app:layout_constraintGuide_percent="0.80" />
 
-    </androidx.constraintlayout.widget.Guideline>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
