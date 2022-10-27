@@ -22,18 +22,6 @@
 
     </ImageView>
 
-<!--    <TextView-->
-<!--        android:id="@+id/username"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:background="@color/white"-->
-<!--        android:text="Username"-->
-<!--        android:padding="8dp"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/guideline2"-->
-<!--        app:layout_constraintStart_toStartOf="@id/login"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/tree" />-->
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -59,28 +47,20 @@
         app:layout_constraintTop_toBottomOf="@id/tilusername"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:passwordToggleEnabled="true"
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:hint="Password">
+            android:hint="Password"
+            android:inputType="textPassword"
+            >
 
         </EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <TextView-->
-<!--        android:id="@+id/password"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:background="@color/white"-->
-<!--        android:padding="8dp"-->
-<!--        android:text="Password"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/guideline2"-->
-<!--        app:layout_constraintStart_toStartOf="@id/login"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/username" />-->
 
     <Button
         android:id="@+id/login"
